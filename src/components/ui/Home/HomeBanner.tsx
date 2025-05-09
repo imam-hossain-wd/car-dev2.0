@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button"
-import { BookAppointmentButton } from "../Shared/BookAppintmentButton/BookAppointmentButton"
+import { BookAppointmentButton } from "../Shared/BookAppointment/BookAppointment"
+
 
 
 export function HomeBanner() {

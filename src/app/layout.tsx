@@ -42,6 +42,7 @@ import "./globals.css"
 import { ThemeProvider } from "@/Providers/ThemeProvider"
 import { Navbar } from "@/components/ui/Shared/Navbar/Navbar"
 import { Footer } from "@/components/ui/Shared/Footer/Footer"
+import { FloatingButtons } from "@/components/ui/FloatingButtons/FloatingButtons"
 
 
 
@@ -66,11 +67,21 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <Navbar />
+          {/* <Navbar />
           {children}
-          <Footer />
+          <Footer /> */}
+
+<div className="flex min-h-screen flex-col">
+      <Navbar />
+      <main className="flex-1">{children}</main>
+      <FloatingButtons />
+      <Footer />
+    </div>
         </ThemeProvider>
       </body>
     </html>
   )
 }
+
+
+
