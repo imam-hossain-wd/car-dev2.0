@@ -7,8 +7,8 @@ import { FootersiteConfig } from "@/config/site"
 export function Footer() {
   return (
     <footer className="border-t bg-muted/50">
-      <div className="container py-12">
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
+      <div className=" py-12 flex flex-col justify-center items-center">
+        <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-4">
           {/* Brand Section */}
           <div className="space-y-4">
             <Link href="/" className="text-lg font-semibold">

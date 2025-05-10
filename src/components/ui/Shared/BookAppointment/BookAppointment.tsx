@@ -29,9 +29,9 @@
 //           <DrawerHeader>
 //             <DrawerTitle className="text-2xl">Book Your Service</DrawerTitle>
 //           </DrawerHeader>
-//           <div className="p-4 pb-8">
-//             <AppointmentForm />
-//           </div>
+          // <div className="p-4 pb-8">
+          //   <AppointmentForm />
+          // </div>
 //         </div>
 //       </DrawerContent>
 //     </Drawer>
@@ -46,6 +46,7 @@
 
 "use client"
 
+import { AppointmentForm } from "@/components/Forms/AppointmentForm"
 import { Button } from "@/components/ui/button"
 import {
   Drawer,
@@ -80,8 +81,9 @@ export function BookAppointmentButton({ className, size, ...props }: BookAppoint
             <DrawerTitle className="text-2xl">Book Your Service</DrawerTitle>
           </DrawerHeader>
           <div className="p-4 pb-8">
-            {/* Your appointment form goes here */}
-            <p className="text-muted-foreground">Appointment form will appear here</p>
+          <div className="p-4 pb-8">
+            <AppointmentForm />
+          </div>
           </div>
         </div>
       </DrawerContent>

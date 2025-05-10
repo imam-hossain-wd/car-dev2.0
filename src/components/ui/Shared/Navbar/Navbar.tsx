@@ -31,10 +31,11 @@ export function Navbar() {
   const pathname = usePathname()
 
   return (
+    // <div className="flex flex-col justify-center items-center">
     <>
       {/* Top Bar */}
-      <div className="border-b bg-primary/10 text-sm">
-        <div className="container flex items-center justify-between py-2">
+      <div className="border-b bg-primary/10 text-sm ">
+        <div className="container mx-auto py-2 flex items-center justify-between ">
           <div className="flex items-center gap-4">
             <div className="flex items-center gap-2">
               <Phone className="h-4 w-4 text-primary" />
@@ -50,7 +51,7 @@ export function Navbar() {
             </div>
           </div>
 
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-2 lg:gap-4">
             {socialLinks.map((social) => (
               <Link
                 key={social.name}
@@ -67,7 +68,7 @@ export function Navbar() {
 
       {/* Main Navbar */}
       <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-        <div className="container flex h-20 items-center justify-between px-4 sm:px-6">
+        <div className="container mx-auto flex h-20 items-center justify-between px-4 sm:px-6">
           {/* Mobile Menu */}
           <div className="md:hidden">
             <Sheet>
@@ -103,9 +104,6 @@ export function Navbar() {
               </SheetContent>
             </Sheet>
           </div>
-
-
-
 
           {/* Logo - Centered on mobile */}
           <Link href="/" className="text-xl font-bold md:text-2xl">
