@@ -1,9 +1,9 @@
-"use client"
+"use client";
 
-import { CalendarIcon, ClockIcon } from "lucide-react"
-import { useForm } from "react-hook-form"
-import { zodResolver } from "@hookform/resolvers/zod"
-import * as z from "zod"
+import { CalendarIcon } from "lucide-react";
+import { useForm } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod";
+import * as z from "zod";
 
 import {
   Form,
@@ -12,18 +12,17 @@ import {
   FormItem,
   FormLabel,
   FormMessage,
-} from "@/components/ui/form"
-import { Input } from "@/components/ui/input"
-import { Textarea } from "@/components/ui/textarea"
-import { Button } from "@/components/ui/button"
+} from "@/components/ui/form";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { Button } from "@/components/ui/button";
 import {
   Popover,
   PopoverContent,
   PopoverTrigger,
-} from "@/components/ui/popover"
-import { Calendar } from "@/components/ui/calendar"
-import { cn } from "@/lib/utils"
-
+} from "@/components/ui/popover";
+import { Calendar } from "@/components/ui/calendar";
+import { cn } from "@/lib/utils";
 
 const formSchema = z.object({
   name: z.string().min(2, {
@@ -45,7 +44,7 @@ const formSchema = z.object({
     message: "Please select a time for your appointment.",
   }),
   message: z.string().optional(),
-})
+});
 
 const services = [
   "Car AC Repair",
@@ -55,7 +54,7 @@ const services = [
   "Brake Service",
   "Oil Change",
   "Other",
-]
+];
 
 const timeSlots = [
   "09:00 AM",
@@ -67,7 +66,7 @@ const timeSlots = [
   "03:00 PM",
   "04:00 PM",
   "05:00 PM",
-]
+];
 
 export function AppointmentForm() {
   const form = useForm<z.infer<typeof formSchema>>({
@@ -79,10 +78,10 @@ export function AppointmentForm() {
       service: "",
       message: "",
     },
-  })
+  });
 
-  function onSubmit(values: z.infer<typeof formSchema>) {
-    form.reset()
+  function onSubmit() {
+    form.reset();
   }
 
   return (
@@ -168,6 +167,7 @@ export function AppointmentForm() {
                         )}
                       >
                         {field.value ? (
+                          // @ts-expect-error value can be undefined, format expects Date
                           format(field.value, "PPP")
                         ) : (
                           <span>Pick a date</span>
@@ -238,5 +238,5 @@ export function AppointmentForm() {
         </Button>
       </form>
     </Form>
-  )
+  );
 }

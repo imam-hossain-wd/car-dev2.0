@@ -10,7 +10,7 @@ export function TrustedService() {
           {/* Image Section */}
           <div className="relative h-full min-h-[400px] overflow-hidden rounded-2xl shadow-xl">
             <Image
-             src="https://img.freepik.com/free-photo/mechanic-man-uniform-holding-wrenches-auto-service-center-smiling-camera_496169-1000.jpg?t=st=1746875957~exp=1746879557~hmac=e38a8a718281435b7f985692e92bd36f91dbbdfecf814e46a1d851d650f05d67&w=996"
+              src="https://img.freepik.com/free-photo/mechanic-man-uniform-holding-wrenches-auto-service-center-smiling-camera_496169-1000.jpg?t=st=1746875957~exp=1746879557~hmac=e38a8a718281435b7f985692e92bd36f91dbbdfecf814e46a1d851d650f05d67&w=996"
               alt="Trusted Car Service in Dubai"
               fill
               className="object-cover"
@@ -31,7 +31,7 @@ export function TrustedService() {
               <span className="text-primary">Trusted Service</span>
             </h2>
             <p className="text-lg text-gray-600">
-              With over 15 years of experience in Dubai's automotive industry,
+              With over 15 years of experience in Dubai’s automotive industry,
               we provide unmatched expertise and care for your vehicle.
             </p>
 

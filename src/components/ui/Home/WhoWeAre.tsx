@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
-import { CheckCircle2, Users, Shield, Award, Clock } from "lucide-react";
+import {  Users, Shield, Award, Clock } from "lucide-react";
 
 export function WhoWeAre() {
   return (
@@ -34,7 +34,7 @@ export function WhoWeAre() {
             </h2>
             <p className="text-lg text-gray-600">
               24CarServiceDubai is a premier automotive service center with over a decade of 
-              experience serving Dubai's drivers. Our team of certified technicians delivers 
+              experience serving Dubai’s drivers. Our team of certified technicians delivers 
               exceptional car care with honesty and expertise.
             </p>
 
@@ -78,10 +78,10 @@ export function WhoWeAre() {
             <div className="rounded-xl bg-primary/5 p-6">
               <h3 className="mb-2 text-xl font-semibold">Our Mission</h3>
               <p className="text-gray-700">
-                "To provide unparalleled 24/7 on-demand car services throughout Dubai with 
-                immediate, reliable, and professional assistance that keeps our customers 
-                moving safely on the road."
-              </p>
+  &ldquo;To provide unparalleled 24/7 on-demand car services throughout Dubai with 
+  immediate, reliable, and professional assistance that keeps our customers 
+  moving safely on the road.&rdquo;
+</p>
             </div>
 
             <div className="flex gap-4 pt-4">

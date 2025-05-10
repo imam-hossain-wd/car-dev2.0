@@ -2,7 +2,7 @@
 
 import Link from "next/link"
 import { usePathname } from "next/navigation"
-import { Menu, X, Phone, Mail, MapPin, Facebook, Instagram, Youtube, Twitter } from "lucide-react"
+import { Menu, Phone, Mail, MapPin, Facebook, Instagram, Youtube, Twitter } from "lucide-react"
 import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"

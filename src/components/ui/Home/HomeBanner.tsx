@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Phone, MessageCircle, NotebookPen } from "lucide-react";
+import { Phone, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { BookAppointmentButton } from "@/components/ui/Shared/BookAppointment/BookAppointment";
 
