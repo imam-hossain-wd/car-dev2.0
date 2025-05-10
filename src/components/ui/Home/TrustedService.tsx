@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 export function TrustedService() {
   return (
     <section className="py-16 md:py-24 bg-gradient-to-b from-white to-gray-50">
-      <div className="container mx-auto">
+      <div className="container mx-auto px-4">
         <div className="grid items-center gap-12 lg:grid-cols-2">
           {/* Image Section */}
           <div className="relative h-full min-h-[400px] overflow-hidden rounded-2xl shadow-xl">
