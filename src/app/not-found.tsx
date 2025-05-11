@@ -1,8 +1,6 @@
-
-
 import { Button } from "@/components/ui/button"
-// import { RocketIcon, SearchIcon } from "@radix-ui/react-icons"
 import Link from "next/link"
+import { Compass, Home, Search } from "lucide-react"
 
 export default function NotFound() {
   return (
@@ -11,21 +9,7 @@ export default function NotFound() {
         <div className="p-8 md:p-12">
           <div className="flex flex-col items-center text-center">
             <div className="w-24 h-24 bg-blue-100 rounded-full flex items-center justify-center mb-6">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="48"
-                height="48"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="text-blue-500"
-              >
-                <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z" />
-                <line x1="4" x2="4" y1="22" y2="15" />
-              </svg>
+              <Compass className="h-12 w-12 text-blue-500 stroke-[1.5]" />
             </div>
             
             <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4">
@@ -39,14 +23,14 @@ export default function NotFound() {
             <div className="flex flex-col sm:flex-row gap-3 w-full max-w-xs">
               <Button asChild className="gap-2 bg-primary hover:bg-primary/90">
                 <Link href="/">
-                  {/* <RocketIcon className="h-4 w-4" /> */}
+                  <Home className="h-4 w-4" />
                   Go Home
                 </Link>
               </Button>
               
               <Button asChild variant="outline" className="gap-2 border-primary text-primary hover:bg-primary/10">
                 <Link href="/services">
-                  {/* <SearchIcon className="h-4 w-4" /> */}
+                  <Search className="h-4 w-4" />
                   Browse Services
                 </Link>
               </Button>

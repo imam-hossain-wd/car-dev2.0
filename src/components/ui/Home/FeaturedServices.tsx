@@ -25,6 +25,7 @@ const getServiceIcon = (serviceName: string) => {
   }
   return <Wrench className="h-8 w-8 text-primary" />
 }
+  
 
 export function FeaturedServices() {
   const [services, setServices] = useState<any[]>([])
@@ -50,6 +51,8 @@ export function FeaturedServices() {
 
     fetchServices()
   }, [])
+
+
 
   if (loading) {
     return (
