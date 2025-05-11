@@ -8,6 +8,8 @@ import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import { BookAppointmentButton } from "../BookAppointment/BookAppointment"
 import { ModeToggle } from "../../ModeToggle/ModeToggle"
+import Image from "next/image"
+import { bandlogo } from "@/utiils/assets"
 
 
 const navItems = [
@@ -107,8 +109,11 @@ export function Navbar() {
 
           {/* Logo - Centered on mobile */}
           <Link href="/" className="text-xl font-bold md:text-2xl">
-            24CarServiceDubai
+            <Image className="w-54 h-40"  src={bandlogo.logo} quality={100} width={500} height={500} alt="24 car service dubai band logo"/>
           </Link>
+          {/* <Link href="/" className="text-xl font-bold md:text-2xl">
+            24CarServiceDubai
+          </Link> */}
 
           {/* Desktop Navigation */}
           <nav className="hidden items-center gap-8 md:flex">

@@ -5,7 +5,7 @@ import GetTouch from '@/components/ui/Home/GetTouch'
 import HomeBanner from '@/components/ui/Home/HomeBanner'
 import Reviews from '@/components/ui/Home/Reviews'
 import { TrustedService } from '@/components/ui/Home/TrustedService'
-import { WhoWeAre } from '@/components/ui/Home/WhoWeAre'
+import { WhoWeAre } from '@/components/ui/WhoWeAre/WhoWeAre'
 import React from 'react'
 
 export default function HomePage() {

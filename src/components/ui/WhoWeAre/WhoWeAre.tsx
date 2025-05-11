@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import {  Users, Shield, Award, Clock } from "lucide-react";
+import { images } from "@/utiils/assets";
 
 export function WhoWeAre() {
   return (
@@ -12,7 +13,7 @@ export function WhoWeAre() {
             <div className="absolute -left-8 -top-8 z-0 h-full w-full rounded-2xl bg-primary/10"></div>
             <div className="relative z-10 h-full overflow-hidden rounded-2xl shadow-xl">
               <Image
-                src="https://img.freepik.com/free-photo/team-mechanics-working-garage_23-2149155436.jpg"
+                src={images.whoweare}
                 alt="24CarServiceDubai Team"
                 fill
                 className="object-cover"
