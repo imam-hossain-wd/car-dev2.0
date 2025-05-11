@@ -17,9 +17,9 @@ const ServicePage = async () => {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {
-          posts.map((service: Service) => (
+          posts.map((service: Service ,id:number) => (
             <div
-              key={service.id}
+              key={id}
               className="border border-gray-200 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 bg-base-100"
             >
               {service.image_url && (

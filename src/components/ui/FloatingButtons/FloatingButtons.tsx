@@ -110,19 +110,9 @@ export function FloatingButtons() {
   return (
     <>
       {/* Desktop Layout */}
-      <div className="fixed right-8 top-[50%] z-50 hidden -translate-y-1/2 flex-col items-end gap-4 md:flex">
-        {/* Scroll to Top Button - Only shows when scrolled down */}
-        {shojwScrollButton && (
-          <Button
-            onClick={scrollToTop}
-            className="h-12 w-12 rounded-full bg-primary/80 p-0 backdrop-blur-sm hover:bg-primary"
-            aria-label="Scroll to top"
-          >
-            <ArrowUp className="h-5 w-5" />
-          </Button>
-        )}
-
-        <div className="flex flex-col gap-3">
+      <div className="fixed right-8 z-50 hidden flex-col items-end gap-4 md:flex">
+        {/* Action Buttons - Middle Right */}
+        <div className="fixed right-8 top-[50%] -translate-y-1/2 flex flex-col gap-3">
           <Button
             asChild
             className="h-12 w-12 rounded-full bg-green-600 p-0 hover:bg-green-700"
@@ -155,6 +145,17 @@ export function FloatingButtons() {
             </a>
           </Button>
         </div>
+
+        {/* Scroll to Top Button - Bottom Right */}
+        {showScrollButton && (
+          <Button
+            onClick={scrollToTop}
+            className="fixed right-8 bottom-8 h-12 w-12 rounded-full bg-primary/80 p-0 backdrop-blur-sm hover:bg-primary"
+            aria-label="Scroll to top"
+          >
+            <ArrowUp className="h-5 w-5" />
+          </Button>
+        )}
       </div>
 
       {/* Mobile Layout */}
