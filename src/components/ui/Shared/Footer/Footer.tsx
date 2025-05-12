@@ -1,8 +1,7 @@
 import Link from "next/link";
 import { Facebook, Instagram, Twitter } from "lucide-react";
 import { FootersiteConfig } from "@/config/site";
-import Image from "next/image";
-import { bandlogo } from "@/utiils/assets";
+
 
 // text-muted-foreground
 

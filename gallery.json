@@ -1,0 +1,65 @@
+{
+  "gallery": [
+    {
+      "id": 1,
+      "title": "AC Repair & Maintenance",
+      "description": "Our technicians fixing car AC systems using OEM parts.",
+      "image": "https://img.freepik.com/free-photo/mechanic-checking-car-air-conditioner_23-2149155439.jpg",
+      "category": "ac-service"
+    },
+    {
+      "id": 2,
+      "title": "Battery Replacement",
+      "description": "24/7 battery testing and replacement at your location.",
+      "image": "https://img.freepik.com/free-photo/auto-mechanic-working-garage_23-2150323516.jpg",
+      "category": "battery"
+    },
+    {
+      "id": 3,
+      "title": "Engine Diagnostics",
+      "description": "Advanced OBD-II scans to detect engine issues early.",
+      "image": "https://img.freepik.com/free-photo/mechanic-using-digital-tablet-checking-car_23-2149151964.jpg",
+      "category": "diagnostics"
+    },
+    {
+      "id": 4,
+      "title": "Radiator Repair",
+      "description": "Expert cooling system repairs to prevent overheating.",
+      "image": "https://img.freepik.com/free-photo/mechanic-repairing-car-radiator_23-2149151966.jpg",
+      "category": "radiator"
+    },
+    {
+      "id": 5,
+      "title": "Brake Service",
+      "description": "Premium brake pad replacements for safer driving.",
+      "image": "https://img.freepik.com/free-photo/mechanic-checking-brake-disc-car-repair-service_146671-19605.jpg",
+      "category": "brakes"
+    },
+    {
+      "id": 6,
+      "title": "Oil Change Service",
+      "description": "Synthetic oil changes to keep your engine running smooth.",
+      "image": "https://i.ibb.co/LPyv1Vd/engine-oil-changing.png",
+      "category": "oil"
+    },
+    {
+      "id": 7,
+      "title": "Tire Services",
+      "description": "Wheel alignment and tire rotations for better mileage.",
+      "image": "https://img.freepik.com/free-photo/mechanic-changing-tire-car_23-2149151968.jpg",
+      "category": "tires"
+    },
+    {
+      "id": 8,
+      "title": "Electrical Repairs",
+      "description": "Fixing wiring, alternators, and starter systems.",
+      "image": "https://img.freepik.com/free-photo/electrician-repairing-car-lights_23-2149155437.jpg",
+      "category": "electrical"
+    }
+  ],
+  "seo": {
+    "title": "Our Work Gallery | 24CarServiceDubai - Professional Car Repairs in Dubai",
+    "description": "See photos of our car AC repair, battery replacement, and engine diagnostic services in Dubai. Trusted by 1000+ customers.",
+    "keywords": "car repair gallery, dubai mechanic photos, auto service portfolio"
+  }
+}
