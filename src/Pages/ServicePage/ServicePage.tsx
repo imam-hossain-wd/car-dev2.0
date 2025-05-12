@@ -30,7 +30,7 @@ const getServiceIcon = (serviceName: string) => {
 }
   
 
-export function ServicePage() {
+export default function ServicePage() {
   const [services, setServices] = useState<any[]>([])
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)

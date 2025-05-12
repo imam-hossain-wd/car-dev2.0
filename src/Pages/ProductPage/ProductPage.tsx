@@ -352,6 +352,7 @@ const ProductsPage = () => {
     const fetchProducts = async () => {
       try {
         const data = await productdata();
+        //@ts-ignore
         setProducts(data);
       } catch (error) {
         console.error('Error fetching products:', error);
@@ -419,7 +420,10 @@ const ProductsPage = () => {
                   
                   {/* Interactive elements */}
                   <div className="mt-auto pt-4 border-t border-gray-100">
-                    <Link href={`/products/${product?.name}`}>
+                    
+                    <Link href={
+                      //@ts-ignore
+                      `/products/${product?.name}`}>
                     <button className="w-full py-2 px-4 bg-primary hover:bg-primary-dark text-white font-medium rounded-lg transition-all duration-300 shadow-sm hover:shadow-md">
                       View Details
                     </button>
