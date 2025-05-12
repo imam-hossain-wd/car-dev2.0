@@ -1,5 +1,6 @@
-import ServicePage from '@/Pages/ServicePage/ServicePage'
-import React from 'react'
+
+import { ServicePage } from '@/Pages/ServicePage/ServicePage'
+
 
 export default function Service() {
   return <ServicePage />

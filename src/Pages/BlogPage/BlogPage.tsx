@@ -1,4 +1,4 @@
-import blogData from '../../../blogData.json';
+import blogData from '../../data/blogData.json';
 import Head from 'next/head';
 
 

@@ -1,0 +1,25 @@
+{
+  "videos": [
+    {
+      "id": 1,
+      "title": "AC Repair Process",
+      "description": "See how we fix car AC systems in Dubai.",
+      "url": "https://www.youtube.com/watch?v=9KKfIYch1FE",
+      "thumbnail": "https://img.freepik.com/free-photo/mechanic-checking-car-air-conditioner_23-2149155439.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Battery Replacement",
+      "description": "Watch our mobile battery service in action.",
+      "url": "https://www.youtube.com/watch?v=zfpHCMSg1hA",
+      "thumbnail": "https://img.freepik.com/free-photo/mechanic-holding-car-battery_23-2149151965.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Engine Diagnostics",
+      "description": "OBD-II scanning for accurate fault detection.",
+      "url": "https://www.youtube.com/watch?v=zfpHCMSg1hA",
+      "thumbnail": "https://img.freepik.com/free-photo/mechanic-using-digital-tablet_23-2149151964.jpg"
+    }
+  ]
+}
