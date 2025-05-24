@@ -1,7 +1,9 @@
 import Image from "next/image";
 import { Phone, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { BookAppointmentButton } from "@/components/ui/Shared/BookAppointment/BookAppointment";
+import { BookAppointmentButton } from "@/components/ui/Shared/Buttons/BookAppointmentButton/BookAppointmentButton";
+import { CallNowButton } from "../Shared/Buttons/CallNowButton/CallNowButton";
+import { WhatsAppButton } from "../Shared/Buttons/WhatsAppButton/WhatsAppButton";
 
 export default function HomeBanner() {
   return (
@@ -28,7 +30,7 @@ export default function HomeBanner() {
             </p>
 
             {/* Responsive Button Group */}
-            <div className="mt-10 flex w-full flex-col items-center gap-4 sm:flex-row sm:justify-center">
+            {/* <div className="mt-10 flex w-full flex-col items-center gap-4 sm:flex-row sm:justify-center">
               <Button
                 asChild
                 className="w-full min-w-[200px] gap-2 bg-green-600 py-6 text-lg hover:bg-green-700 sm:w-auto"
@@ -57,6 +59,12 @@ export default function HomeBanner() {
                 className="w-full min-w-[200px] py-6 text-lg sm:w-auto"
                 size="lg"
               />
+            </div> */}
+
+            <div className="flex gap-5 mt-5 container mx-auto">
+              <CallNowButton className="sm:w-auto" />
+              <BookAppointmentButton className="sm:w-auto" />
+              <WhatsAppButton className="sm:w-auto" />
             </div>
           </div>
         </div>

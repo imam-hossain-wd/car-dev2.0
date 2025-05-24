@@ -6,7 +6,7 @@ import { Menu, Phone, Mail, MapPin, Facebook, Instagram, Youtube, Twitter } from
 import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
-import { BookAppointmentButton } from "../BookAppointment/BookAppointment"
+import { BookAppointmentButton } from "../Buttons/BookAppointmentButton/BookAppointmentButton"
 import { ModeToggle } from "../../ModeToggle/ModeToggle"
 import Image from "next/image"
 import { bandlogo } from "@/utiils/assets"

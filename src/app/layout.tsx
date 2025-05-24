@@ -42,7 +42,9 @@ import "./globals.css"
 import { ThemeProvider } from "@/Providers/ThemeProvider"
 import { Navbar } from "@/components/ui/Shared/Navbar/Navbar"
 import { Footer } from "@/components/ui/Shared/Footer/Footer"
-import { FloatingButtons } from "@/components/ui/FloatingButtons/FloatingButtons"
+import { FloatingButtons } from "@/components/ui/Shared/Buttons/FloatingButtons/FloatingButtons"
+import Header from "@/seo/Header/Header"
+import { RootSchema } from "@/seo/SchemaMarkup/RootSchema"
 
 
 
@@ -60,6 +62,15 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
+
+       {/* <Header
+        title="Home - 24CarServiceDubai"
+        description="24/7 on-demand car repair & maintenance in Dubai. Car AC, battery, oil change & more."
+        keywords="car repair Dubai, battery replacement, car service UAE"
+        author="Md Saiful Islam"
+        canonicalUrl="https://www.24carservicedubai.com/"
+        schemaComponent={<RootSchema />}
+      /> */}
       <body className={inter.className}>
         <ThemeProvider
           attribute="class"
@@ -67,16 +78,12 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          {/* <Navbar />
-          {children}
-          <Footer /> */}
-
-<div className="flex min-h-screen flex-col">
-      <Navbar />
-      <main className="flex-1">{children}</main>
-      <FloatingButtons />
-      <Footer />
-    </div>
+          <div className="flex min-h-screen flex-col">
+            <Navbar />
+            <main className="flex-1">{children}</main>
+            <FloatingButtons />
+            <Footer />
+          </div>
         </ThemeProvider>
       </body>
     </html>

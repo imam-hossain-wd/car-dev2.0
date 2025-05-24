@@ -16,8 +16,9 @@ const nextConfig = {
     ignoreDuringBuilds: true,
   },
   images: {
-    domains: ['img.freepik.com','i.ibb.co'],
+    domains: ['img.freepik.com','i.ibb.co', 'example.com'],
   },
 }
 
 module.exports = nextConfig;
+

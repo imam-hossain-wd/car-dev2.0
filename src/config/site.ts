@@ -1,5 +1,5 @@
 export const FootersiteConfig = {
-    name: "24CarServiceDubai",
+    name: "24 Car Service Dubai",
     description: "Your On-Demand Car Savior Anywhere, Anytime in Dubai!",
     url: "https://24carservicedubai.com",
     services: [

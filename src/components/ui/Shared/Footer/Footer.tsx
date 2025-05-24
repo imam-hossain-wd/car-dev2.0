@@ -1,21 +1,24 @@
 import Link from "next/link";
 import { Facebook, Instagram, Twitter } from "lucide-react";
 import { FootersiteConfig } from "@/config/site";
+import Image from "next/image";
+import { bandlogo } from "@/utiils/assets";
 
 
 // text-muted-foreground
 
 export function Footer() {
   return (
-    <footer className="border-t bg-primary text-white">
-      <div className=" py-12 flex flex-col justify-center items-center">
+    <footer className="border-t bg-black text-white ">
+      <div className=" py-12 flex flex-col justify-center items-center container mx-auto">
         <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-4">
           {/* Brand Section */}
           <div className="space-y-4">
-            <Link href="/" className="text-lg font-semibold">
+           
+            <Link href="/" className="text-lg lg:text-xl  font-semibold">
               {FootersiteConfig.name}
             </Link>
-            <p className="text-sm ">{FootersiteConfig.description}</p>
+            <p className="text-sm mt-3 ">{FootersiteConfig.description}</p>
             <div className="flex gap-4">
               <Link href="#" className=" hover:text-primary">
                 <Facebook className="h-5 w-5" />
@@ -65,7 +68,7 @@ export function Footer() {
           <div className="space-y-4">
             <h3 className="text-sm font-semibold">Contact</h3>
             <div className="space-y-2 text-sm ">
-              <p>Dubai, UAE</p>
+              <p>Al Satwa, Dubai, UAE</p> 
               <p>
                 Phone:{" "}
                 <Link href="tel:+971568703512" className="hover:text-primary">
