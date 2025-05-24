@@ -16,9 +16,9 @@ export default function HomePage() {
       <FeaturedServices />
       <TrustedService />
       <WhoWeAre />
-      <FAQSection />
       <Reviews />
       <Blogs />
+      <FAQSection />
       <GetTouch />
     </div>
   )
