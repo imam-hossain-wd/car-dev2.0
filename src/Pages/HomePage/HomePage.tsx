@@ -13,8 +13,8 @@ export default function HomePage() {
   return (
     <div>
       <HomeBanner />
-      <TrustedService />
       <FeaturedServices />
+      <TrustedService />
       <WhoWeAre />
       <FAQSection />
       <Reviews />
