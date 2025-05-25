@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@formkit/auto-animate": "^0.8.2",
     "@hookform/resolvers": "^5.0.1",
     "@radix-ui/react-accordion": "^1.2.10",
     "@radix-ui/react-collapsible": "^1.1.10",
@@ -34,7 +35,6 @@
     "react-dom": "^19.0.0",
     "react-hook-form": "^7.56.3",
     "react-spinners": "^0.17.0",
-    "swiper": "^11.2.6",
     "tailwind-merge": "^3.2.0",
     "textarea": "^0.3.0",
     "vaul": "^1.1.2",
@@ -46,6 +46,7 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "@types/swiper": "^6.0.0",
     "eslint": "^9",
     "eslint-config-next": "15.3.2",
     "tailwindcss": "^4",

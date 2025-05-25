@@ -5,7 +5,7 @@ import { Badge } from "../badge";
 
 export default function FeaturedServices() {
   return (
-    <div className="container py-12">
+    <div className="container py-12 mx-auto">
        <div className="text-center mb-16">
           <Badge variant="outline" className="mb-4 bg-primary/10 text-primary">
             Our Services

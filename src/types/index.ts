@@ -80,9 +80,101 @@ export interface ServiceCardProps {
 
 // service data type---------------------
 // types/service.ts
+// export interface Service {
+//   title: string;
+//   metaTitle: string;
+//   metaDescription: string;
+//   features: string[];
+//   keywords: string[];
+//   slug: string;
+//   service_image: string;
+//   intro: {
+//     heading: string;
+//     subheading: string;
+//     content: string;
+//   };
+//   whyChooseUs: {
+//     heading: string;
+//     points: string[];
+//   };
+//   // Add other interfaces as needed
+// }
+
+// export interface ServicesData {
+//   services: Service[];
+// }
+
+
+// //-------service details page types
+
+// export interface ServiceStep {
+//   title: string;
+//   description: string;
+//   icon?: string;
+// }
+
+// export interface ServiceFAQ {
+//   question: string;
+//   answer: string;
+// }
+
+// export interface ServiceFeature {
+//   title: string;
+//   description: string;
+//   icon: React.ReactNode;
+// }
+
+// export interface Service {
+//   id: string;
+//   title: string;
+//   slug: string;
+//   metaTitle: string;
+//   metaDescription: string;
+//   service_image: string;
+//   features: string[];
+//   intro: {
+//     heading: string;
+//     subheading: string;
+//     content: string;
+//   };
+//   whyChooseUs: {
+//     heading: string;
+//     points: string[];
+//   };
+//   problemSignsSection: {
+//     heading: string;
+//     description: string;
+//     signs: string[];
+//   };
+//   ourProcess: {
+//     heading: string;
+//     steps: ServiceStep[];
+//   };
+//   toolsOrProducts: {
+//     heading: string;
+//     brands: string[];
+//     note: string;
+//   };
+//   serviceCoverage: {
+//     heading: string;
+//     locations: string[];
+//     note: string;
+//   };
+//   ctaSection: {
+//     heading: string;
+//     description: string;
+//     buttonText: string;
+//   };
+//   faq: ServiceFAQ[];
+// }
+
+// ---------------------------- service details page
+// types/index.ts
+
+
 export interface Service {
   title: string;
-  metaTitle: string;
+  metaTitle?: string;
   metaDescription: string;
   features: string[];
   keywords: string[];
@@ -97,60 +189,19 @@ export interface Service {
     heading: string;
     points: string[];
   };
-  // Add other interfaces as needed
-}
-
-export interface ServicesData {
-  services: Service[];
-}
-
-
-//-------service details page types
-
-export interface ServiceStep {
-  title: string;
-  description: string;
-  icon?: string;
-}
-
-export interface ServiceFAQ {
-  question: string;
-  answer: string;
-}
-
-export interface ServiceFeature {
-  title: string;
-  description: string;
-  icon: React.ReactNode;
-}
-
-export interface Service {
-  id: string;
-  title: string;
-  slug: string;
-  metaTitle: string;
-  metaDescription: string;
-  service_image: string;
-  features: string[];
-  intro: {
-    heading: string;
-    subheading: string;
-    content: string;
-  };
-  whyChooseUs: {
-    heading: string;
-    points: string[];
-  };
-  problemSignsSection: {
+  problemSignsSection?: {
     heading: string;
     description: string;
     signs: string[];
   };
   ourProcess: {
     heading: string;
-    steps: ServiceStep[];
+    steps: Array<{
+      title: string;
+      description: string;
+    }>;
   };
-  toolsOrProducts: {
+  toolsOrProducts?: {
     heading: string;
     brands: string[];
     note: string;
@@ -165,5 +216,64 @@ export interface Service {
     description: string;
     buttonText: string;
   };
-  faq: ServiceFAQ[];
+  faq: Array<{
+    question: string;
+    answer: string;
+  }>;
+  // Add any other optional fields that might exist in your JSON
+}
+
+// export interface Service {
+//   title: string;
+//   metaTitle?: string;
+//   metaDescription: string;
+//   features: string[];
+//   keywords: string[];
+//   slug: string;
+//   service_image: string;
+//   intro: {
+//     heading: string;
+//     subheading: string;
+//     content: string;
+//   };
+//   whyChooseUs: {
+//     heading: string;
+//     points: string[];
+//   };
+//   problemSignsSection?: {
+//     heading: string;
+//     description: string;
+//     signs: string[];
+//   };
+//   ourProcess: {
+//     heading: string;
+//     steps: {
+//       title: string;
+//       description: string;
+//     }[];
+//   };
+//   toolsOrProducts?: {
+//     heading: string;
+//     brands: string[];
+//     note: string;
+//   };
+//   serviceCoverage: {
+//     heading: string;
+//     locations: string[];
+//     note: string;
+//   };
+//   ctaSection: {
+//     heading: string;
+//     description: string;
+//     buttonText: string;
+//   };
+//   faq: {
+//     question: string;
+//     answer: string;
+//   }[];
+// }
+
+// For the entire services data structure
+export interface ServicesData {
+  services: Service[];
 }
